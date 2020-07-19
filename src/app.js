@@ -17,7 +17,7 @@ app.use(
 app.get("/", function (req, res) {
   res.send("<h1>Hello World!</h1>");
 });
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(process.env.PORT || 3000, () =>
   console.log("Server Running on Port", port)
 );

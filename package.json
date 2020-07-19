@@ -15,7 +15,6 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "nodemon index",
-    "build": "node index.js"
+    "start": "node index"
   }
 }
