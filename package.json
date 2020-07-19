@@ -24,7 +24,7 @@
     "jest": "^25.1.0"
   },
   "nodemonConfig": {
-    "exec": "npm run dev",
+    "exec": "yarn run dev",
     "watch": [
       "server/*",
       "public/*"
@@ -44,7 +44,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "start": "npm run prod",
+    "start": "yarn prod",
     "build": "npm-run-all clean transpile",
     "server": "node ./dist-server/bin/www",
     "dev": "NODE_ENV=development npm-run-all build server",
