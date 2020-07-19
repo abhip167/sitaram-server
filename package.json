@@ -1,9 +1,9 @@
 {
-  "name": "express-es6-sample",
+  "name": "sitaram-server",
   "version": "0.2.0",
   "private": true,
   "author": {
-    "name": "Jonathan Cunanan",
+    "name": "Abhishek",
     "url": "https://github.com/jcunanan05"
   },
   "license": "MIT",
