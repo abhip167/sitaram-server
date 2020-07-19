@@ -15,6 +15,8 @@ var _morgan = _interopRequireDefault(require("morgan"));
 
 var _jsonGraphqlServer = _interopRequireDefault(require("json-graphql-server"));
 
+var _cors = _interopRequireDefault(require("cors"));
+
 var _fs = _interopRequireDefault(require("fs"));
 
 var _index = _interopRequireDefault(require("./routes/index"));
@@ -52,6 +54,7 @@ var rawdata = _fs["default"].readFileSync(_path["default"].join(__dirname, "../p
 
 var JSONobject = JSON.parse(rawdata);
 var app = (0, _express["default"])();
+app.use((0, _cors["default"])());
 app.use((0, _morgan["default"])("dev"));
 app.use(_express["default"].json());
 app.use(_express["default"].urlencoded({

@@ -3,6 +3,7 @@ import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import jsonGraphqlExpress from "json-graphql-server";
+import cors from "cors";
 import fs from "fs";
 // const data = require("./result.js");
 
@@ -39,6 +40,7 @@ let JSONobject = JSON.parse(rawdata);
 
 var app = express();
 
+app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
