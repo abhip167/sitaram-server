@@ -49,7 +49,7 @@
     "server": "node ./dist-server/bin/www",
     "graphql": "json-graphql-server db.js --p 8000",
     "dev": "NODE_ENV=development npm-run-all build server",
-    "prod": "NODE_ENV=production npm-run-all build server graphql",
+    "prod": "NODE_ENV=production npm-run-all build server ",
     "transpile": "babel ./server --out-dir dist-server",
     "clean": "rimraf dist-server",
     "watch:dev": "nodemon",
