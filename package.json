@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "author": {
-    "name": "Abhishek",
+    "name": "abhishek",
     "url": "https://github.com/jcunanan05"
   },
   "license": "MIT",
@@ -24,7 +24,7 @@
     "jest": "^25.1.0"
   },
   "nodemonConfig": {
-    "exec": "yarn run dev",
+    "exec": "npm run dev",
     "watch": [
       "server/*",
       "public/*"
@@ -44,7 +44,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "start": "yarn prod",
+    "start": "npm run prod",
     "build": "npm-run-all clean transpile",
     "server": "node ./dist-server/bin/www",
     "dev": "NODE_ENV=development npm-run-all build server",
